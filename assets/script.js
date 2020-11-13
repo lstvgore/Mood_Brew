@@ -61,6 +61,25 @@ codeWorks.addEventListener("click", function (event) {
 
 // }
 
+
+jQuery(document).ready(function($){
+
+    $('#coinFlip').on('click', function(){
+      var flipResult = Math.random();
+      $('#coinFlip').removeClass();
+      setTimeout(function(){
+        if(flipResult <= 0.5){
+          $('#coinFlip').addClass('head');
+          console.log('it is head');
+        }
+        else{
+          $('#coinFlip').addClass('tails');
+          console.log('it is tails');
+        }
+      }, 100);
+    });
+  });
+
 // coinflip function
 
 function coinFlipGD(h, t){

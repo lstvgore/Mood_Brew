@@ -17,6 +17,10 @@ a {
 a:hover {
   color:  lightgoldenrodyellow;
 }
+a:active {
+  color:lightgray);
+}
+
 hr {
     border-bottom: 1px dashed pink;
     padding-top: 1px;
@@ -55,7 +59,7 @@ hr {
     padding-bottom: 25px;
     padding-top: 15px;
 }
-#img04 {
+.img04 {
   height:170px;
   width: 190;
   padding-bottom: 10px;
@@ -69,6 +73,23 @@ hr {
   width: 200px;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+h1 {
+    font-size: 100px;
+    font-family: 'futura';
+    color: whitesmoke;
+    text-shadow: 0 0 5px rgb(230, 195, 230), 0 0 10px #fff, 0 0 20px rgb(139, 7, 14), 0 0 30px #b69057, 0 0 40px rgb(110, 8, 15), 0 0 55px #a74e55, 0 0 75px #a013a5;
+    text-align: left;
+
+}
+h2 {
+        color: rgb(255, 187, 0);
+        text-shadow: 2px 2px 4px black;
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 20px;
+        font-style: futura;
+        text-align: center;
 }
 h3 {
   color: rgb(233, 169, 86);
@@ -86,18 +107,31 @@ h6 {
     font-size: 30px;
 
 }
-h1 {
-    font-size: 100px;
-    font-family: 'futura';
-    color: whitesmoke;
-    text-shadow: 0 0 5px rgb(230, 195, 230), 0 0 10px #fff, 0 0 20px rgb(139, 7, 14), 0 0 30px #b69057, 0 0 40px rgb(110, 8, 15), 0 0 55px #a74e55, 0 0 75px #a013a5;
-    text-align: left;
+table  {
+   /* margin: 0px 0px 0px 0px; */
+    /* height: 20%;
+    width: 50%; */
+    /* padding: 2px; */
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    flex-direction: column;
+    background-color: #800000;
+    border: none;
+} 
+ td,tr {
+      border: none;
+      outline:none;
+      border-collapse: collapse;
+      background-color:rgb(119, 11, 11);
+      border: 0px solid black;
 }
+
   .holy-grail-left,
   .holy-grail-middle {
       background-color:#800000;
       padding: 1rem;
-      border: 1px solid #ca2121;
+      border-bottom: 1px solid #ca2121;
   }
   .holy-grail-right,
   .holy-grail-footer {
@@ -151,73 +185,24 @@ h1 {
     grid-column-end: 4;
   }
   
-/* // Flip Code */
-#coinFlip {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 200px;
+#foodNAME{
+  font-weight: bold;
+  font-size: large;
 }
 
-#coinFlip {
-    position: relative;
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-  }
- #coinFlip div {
-    width: 100%;
-    height: 100%;
-    -webkit-border-radius: 50%;
-       -moz-border-radius: 50%;
-            border-radius: 50%;
-    -webkit-box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
-       -moz-box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
-            box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
-  }
-  .head {
-    background:blue ;
-  }
-  .tails {
-    background: yellow;
-  }
-  
-  #coinFlip {
-    transition: -webkit-transform 1s ease-in;
-    -webkit-transform-style: preserve-3d;
-  }
-  #coinFlip div {
-    position: absolute;
-    -webkit-backface-visibility: hidden;
-  }
-  .head {
-    z-index: 100;
-  }
-  .tails {
-    transform: rotateY(-180deg);
-  
-  }
-  
-  .head {
-    -webkit-animation: flipHeads 3s ease-out forwards;
-    -moz-animation: flipHeads 3s ease-out forwards;
-      -o-animation: flipHeads 3s ease-out forwards;
-         animation: flipHeads 3s ease-out forwards;
-  }
-  .tails {
-    -webkit-animation: flipTails 3s ease-out forwards;
-    -moz-animation: flipTails 3s ease-out forwards;
-      -o-animation: flipTails 3s ease-out forwards;
-         animation: flipTails 3s ease-out forwards;
-  }
-  
-  @-webkit-keyframes flipHeads {
-    from { -webkit-transform: rotateY(0); -moz-transform: rotateY(360); transform: rotateY(0); }
-    to { -webkit-transform: rotateY(1800deg); -moz-transform: rotateY(1800deg); transform: rotateY(1800deg); }
-  }
-  @-webkit-keyframes flipTails {
-    from { -webkit-transform: rotateY(0); -moz-transform: rotateY(360); transform: rotateY(0); }
-    to { -webkit-transform: rotateY(1980deg); -moz-transform: rotateY(1980deg); transform: rotateY(1980deg); }
-  } 
+#vodkaDrinkNAME{
+  font-weight: bold;
+  font-size: large;
+}
+#rumDrinkNAME{
+  font-weight: bold;
+  font-size: large;
+}
+#ginDrinkNAME{
+  font-weight: bold;
+  font-size: large;
+}
+#TequillaDrinkNAME{
+  font-weight: bold;
+  font-size: large;
+}
